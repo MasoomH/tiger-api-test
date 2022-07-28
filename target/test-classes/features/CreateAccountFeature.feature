@@ -1,3 +1,4 @@
+@Regression
 Feature: Create account with Data generator
   # We are going to re-use a generate token feature.
    
@@ -6,7 +7,7 @@ Feature: Create account with Data generator
     * def result = callonce read('GenerateToken.feature')
     * def generatedToken = result.response.token
     And header Authorization = "Bearer " + generatedToken
-    @security
+  
   Scenario: Create New Account using Data generator;
     * def generator = Java.type('tiger.api.test.fake.DataGenerator')
     * def email = generator.getEmail()
