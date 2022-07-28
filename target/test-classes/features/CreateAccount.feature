@@ -11,7 +11,7 @@ Feature: Create Account
     * def generatedToken = response.token
   Scenario: Create new Account happy path
     Given path "/api/accounts/add-primary-account"
-    And request {"email": "samir3333@gmail.com", "title": "Mr.","firstName": "Samir","lastName": "Fathi","gender": "MALE","maritalStatus": "SINGLE","employmentStatus": "QA","dateOfBirth": "1993-04-25"}
+    And request {"email": "samir3335@gmail.com", "title": "Mr.","firstName": "Samir","lastName": "Fathi","gender": "MALE","maritalStatus": "SINGLE","employmentStatus": "QA","dateOfBirth": "1993-04-25"}
     And header Authorization = "Bearer " + generatedToken
     When method post
     Then status 201
