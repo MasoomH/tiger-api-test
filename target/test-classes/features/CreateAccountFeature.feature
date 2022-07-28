@@ -1,4 +1,4 @@
-@Regression
+
 Feature: Create account with Data generator
   # We are going to re-use a generate token feature.
    

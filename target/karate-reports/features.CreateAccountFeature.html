@@ -45,13 +45,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2022-07-27 07:37:16 PM</div>
+    <div>2022-07-27 09:03:48 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[1:10]"><span>[1:10]</span> <span>Create New Account using Data generator;</span></a>
+            <a href="#[1:11]"><span>[1:11]</span> <span>Create New Account using Data generator;</span></a>
           </div>
         </div>
       </div>
@@ -65,42 +65,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:10]">
+          <div class="scenario-heading" id="[1:11]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">security</a>
+                <a class="badge badge-primary" href="karate-tags.html">Regression</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:10]</span>
+                Scenario: <span>[1:11]</span>
                 <span class="scenario-name">Create New Account using Data generator;</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>15</span>
+              <span>ms:</span>&nbsp;<span>20</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:10]bg">
+            <div class="step-container" id="[1:11]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:11]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url &quot;https://tek-insurance-api.azurewebsites.net&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -115,20 +115,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:11]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def result = callonce read(&#39;GenerateToken.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell failed">13</div>
+    <div class="time-cell failed">16</div>
   </div>
 
    
@@ -137,17 +137,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">19:37:16.377 &gt;&gt; lock acquired, begin callonce: read(&#39;GenerateToken.feature&#39;)
-19:37:16.379 classpath:features/CreateAccountFeature.feature:6
+  <div class="preformatted" data-parent="0.7">21:03:48.809 &gt;&gt; lock acquired, begin callonce: read(&#39;GenerateToken.feature&#39;)
+21:03:48.811 classpath:features/CreateAccountFeature.feature:7
 * def result = callonce read(&#39;GenerateToken.feature&#39;)
 java.lang.NullPointerException
-classpath:features/CreateAccountFeature.feature:6
+classpath:features/CreateAccountFeature.feature:7
 </div>   
 
   <div>
         
     <div class="step-row">
-      <div class="step-container" id="0.6.0.call">
+      <div class="step-container" id="0.7.0.call">
         <div class="step-ref bg-step">&gt;&gt;</div>
         <div class="step-indent"></div>
         <div class="step-cell passed">features.GenerateToken</div>
@@ -159,14 +159,14 @@ classpath:features/CreateAccountFeature.feature:6
 
 </div>
 </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:11]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def generatedToken = result.response.token</span>
@@ -187,45 +187,17 @@ classpath:features/CreateAccountFeature.feature:6
 
 </div>
 </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:11]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
       
       <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + generatedToken</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref skipped">11</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def generator = Java.type(&#39;tiger.api.test.fake.DataGenerator&#39;)</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -253,7 +225,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">12</div>
       
       <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def email = generator.getEmail()</span>
+        <span>*</span>&nbsp;<span>def generator = Java.type(&#39;tiger.api.test.fake.DataGenerator&#39;)</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -281,7 +253,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">13</div>
       
       <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def firstName = generator.getFirstName()</span>
+        <span>*</span>&nbsp;<span>def email = generator.getEmail()</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -309,7 +281,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">14</div>
       
       <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def lastName = generator.getLastName()</span>
+        <span>*</span>&nbsp;<span>def firstName = generator.getFirstName()</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -337,7 +309,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">15</div>
       
       <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def dob = generator.getDob()</span>
+        <span>*</span>&nbsp;<span>def lastName = generator.getLastName()</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -365,7 +337,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">16</div>
       
       <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &quot;/api/accounts/add-primary-account&quot;</span>
+        <span>*</span>&nbsp;<span>def dob = generator.getDob()</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -393,6 +365,34 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">17</div>
       
       <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &quot;/api/accounts/add-primary-account&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
@@ -401,7 +401,7 @@ classpath:features/CreateAccountFeature.feature:6
 
    
   
-  <div class="preformatted" data-parent="0.17">{
+  <div class="preformatted" data-parent="0.18">{
 &quot;email&quot;: &quot;#(email)&quot;,
 &quot;title&quot;: &quot;Mr.&quot;,
 &quot;firstName&quot;: &quot;#(firstName)&quot;,
@@ -426,39 +426,11 @@ classpath:features/CreateAccountFeature.feature:6
   
 
   <div class="step-row">
-    <div class="step-container" id="0.30">
-      <div class="step-ref skipped">30</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.31">
       <div class="step-ref skipped">31</div>
       
       <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 201</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -486,7 +458,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">32</div>
       
       <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def generatedId = response.id</span>
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -514,7 +486,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">33</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>print generatedId</span>
+        <span>*</span>&nbsp;<span>def generatedId = response.id</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -542,7 +514,7 @@ classpath:features/CreateAccountFeature.feature:6
       <div class="step-ref skipped">34</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>print response</span>
+        <span>And</span>&nbsp;<span>print generatedId</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -568,6 +540,34 @@ classpath:features/CreateAccountFeature.feature:6
   <div class="step-row">
     <div class="step-container" id="0.35">
       <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref skipped">36</div>
       
       <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>assert response.email == email</span>

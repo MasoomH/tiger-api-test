@@ -1,6 +1,7 @@
+@Regression
 Feature: Create Account
   # 1)Test API endpoint "/api/accounts/add-primary-account" to add new Account (Same as we do fill the form in UI).
-  # Then status code should be 201– CREATED , with response generate account with Email address.
+  # Then status code should be 201ï¿½ CREATED , with response generate account with Email address.
   Background: generate token for all scenarios.
     Given url "https://tek-insurance-api.azurewebsites.net"
     And path "/api/token"
